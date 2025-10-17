@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Stage 0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <header class="card-header">
+            <figure class="avatar-container">
+                <img 
+                    src="https://api.dicebear.com/7.x/avataaars/svg?seed=Frontend&backgroundColor=b6e3f4"
+                    alt="Profile avatar of Alex Rivera"
+                    class="avatar"
+                    data-testid="test-user-avatar"
+                >
+            </figure>
+            <div class="header-content">
+                <h1 class="user-name" data-testid="test-user-name">Alex Rivera</h1>
+                <div class="timestamp" data-testid="test-user-time" aria-label="Current timestamp in milliseconds"></div>
+            </div>
+        </header>
+
+        <div class="card-body">
+            <section class="bio-section">
+                <p class="user-bio" data-testid="test-user-bio">
+                    Passionate frontend developer with a love for creating beautiful, accessible user experiences. 
+                    I believe in the power of clean code and semantic HTML to make the web a better place for everyone. 
+                    When I'm not coding, you'll find me exploring new technologies or mentoring aspiring developers.
+                </p>
+            </section>
+
+            <nav class="social-section" aria-label="Social media links">
+                <h2 class="section-title">Connect With Me</h2>
+                <ul class="social-links" data-testid="test-user-social-links">
+                    <li>
+                        <a 
+                            href="https://twitter.com/alexrivera" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter"
+                            aria-label="Follow on Twitter"
+                        >
+                            <span aria-hidden="true">🐦</span> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://github.com/alexrivera" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-github"
+                            aria-label="View GitHub profile"
+                        >
+                            <span aria-hidden="true">💻</span> GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://linkedin.com/in/alexrivera" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin"
+                            aria-label="Connect on LinkedIn"
+                        >
+                            <span aria-hidden="true">💼</span> LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://dev.to/alexrivera" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-devto"
+                            aria-label="Read articles on Dev.to"
+                        >
+                            <span aria-hidden="true">📝</span> Dev.to
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="lists-container">
+                <section class="list-section hobbies-section">
+                    <h2 class="section-title">Hobbies & Interests</h2>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Building side projects with React and Vue</li>
+                        <li>Contributing to open source projects</li>
+                        <li>Photography and visual design</li>
+                        <li>Hiking and outdoor adventures</li>
+                        <li>Reading tech blogs and documentation</li>
+                    </ul>
+                </section>
+
+                <section class="list-section dislikes-section">
+                    <h2 class="section-title">Pet Peeves</h2>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Non-semantic HTML markup</li>
+                        <li>Inaccessible websites</li>
+                        <li>Inline styles everywhere</li>
+                        <li>Skipping code reviews</li>
+                        <li>Breaking changes without deprecation warnings</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
